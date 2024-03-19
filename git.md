@@ -1,6 +1,7 @@
-Practical `git` (under construction)
+Practical `git` (under construction) (online edit: https://dillinger.io/)
 ===
 **Remote:**
+
        git remote [-v | --verbose]
        git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=(fetch|push)] <name> <url>
        git remote rename <old> <new>
