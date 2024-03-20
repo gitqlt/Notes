@@ -4,4 +4,4 @@ Terminal multiplexer
 |-|-|-|-|
 | Horizontal | tmux new-session\\; splitw -h | <> %        | \\| \\|
 |            | tmux new\\; splitw -h         |
-| Vertical   | tmux new';' splitw -v         | <> "        | = &#x1400;
+| Vertical   | tmux new';' splitw -v         | <> "        | = &#x2261;
