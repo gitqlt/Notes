@@ -1,6 +1,6 @@
 Terminal multiplexer
 ===
-| |New session|                              | Interactive |
+| | New session                              | Interactive |
 |-|-|-|
 | Horizontal | tmux new-session \; splitw -h | <> %
 |            | tmux new \; splitw -h         |
