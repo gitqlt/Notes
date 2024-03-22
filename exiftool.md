@@ -1,8 +1,11 @@
-To remove exif metadata:
-===
-
-    $ exiftool -all= FILES
+List tagnames instead of tag descriptions:
+====
+    $ exiftool -G -s FILES
 
 Options:
 
- * `-copy`: The metadata to copy: `none` for no metadata, `all` to keep everything.
+ `-G`: print groupnames also. `-s`: print tagnames instead of tag descriptions
+
+To remove exif metadata:
+========================
+    $ exiftool -all= FILES
