@@ -2,6 +2,7 @@ tar practical
 ===
 **Get list of names from file**
 
-    $  ls -dp .* | grep -v '/$' | tar -czvf /tmp/dot.tar.gz -T - 
-**Get list of names from file**
-    $  ls -dp .* | grep -v '/$' | tar -czvf /tmp/dot.tar.gz -T - 
+    $  ls -dp .* | grep -v '/$' | tar                                     -czvf /tmp/dot.tar.gz -T - 
+**exclude pattern when directory** (do not use trailing / in the pattern)
+
+    $  ls -dp .c* | grep '/$' | tar --exclude '*cache*' --exclude '*con*' -czvf /tmp/dotc.tar.gz -T -
