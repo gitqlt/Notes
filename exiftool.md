@@ -4,7 +4,7 @@ List tagnames instead of tag descriptions:
 
 Options:
 
- `-G`: print groupnames also. `-s`: print tagnames instead of tag descriptions
+ `-G`: print groupnames also; `-s`: print tagnames instead of tag descriptions
 
 To remove exif metadata:
 ========================
