@@ -5,5 +5,4 @@ To remove exif metadata:
 
 Options:
 
- * `-copy`: The metadata to copy. `none` for no metadata,
-   `all` to keep everything.
+ * `-copy`: The metadata to copy: `none` for no metadata, `all` to keep everything.
