@@ -1,8 +1,8 @@
-To remove exif metadata:
+Rotate:
 ===
 
-    $ jpegtran -copy none in.jpg > out.jpg
+    $ exiftran -1 -i 2024-01-02T1847.jpg
 
 Options:
 
- * `-copy`: The metadata to copy: `none` for no metadata, `all` to keep everything.
+ `-1/-2/-9/-a`: rotate; `-i`: in-place editing
