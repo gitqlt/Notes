@@ -1,6 +1,6 @@
 tar practical
 ===
-**Get list of names from file**
+**Get list of names to archive from file**
 
     $  ls -dp .* | grep -v '/$' | tar                                       -czvf /tmp/dot.tar.gz -T - 
 **exclude pattern when directory** (do not use trailing / in the pattern)
