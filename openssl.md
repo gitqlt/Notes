@@ -5,7 +5,7 @@ Show content of a PEM certificate (the first one if more chained) (Privacy Enhan
 
 Options:
 
- `-noout`:  do not print the PEM itself (the input)
+`-noout`:  do not print the PEM itself (the input)
  
 Check a PEM public key:
 =====
