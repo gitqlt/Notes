@@ -7,8 +7,7 @@ Show content of a PEM certificate
 
 Options:
 
-`-noout`:  do not print the PEM itself (the input)
-
+`-noout`:  do not print the PEM itself (the input)  
 `-text`:   print full details; `-pubkey`: print PEM public key
  
 Check a PEM public key:
