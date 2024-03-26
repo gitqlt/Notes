@@ -1,6 +1,7 @@
 Show content of a PEM certificate
 ====
 (the first one if more chained)
+
     $ openssl x509 -in certfile.pem -noout -text
     $ openssl x509 -in certfile.pem -noout -pubkey
 
