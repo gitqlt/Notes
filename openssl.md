@@ -6,6 +6,7 @@ Show content of a PEM certificate (the first one if more chained) (Privacy Enhan
 Options:
 
 `-noout`:  do not print the PEM itself (the input)
+`-text`:   print full details; `-pubkey`: print PEM public key
  
 Check a PEM public key:
 =====
