@@ -20,6 +20,8 @@ Practical `git` (under construction) (online edit: https://dillinger.io/)
 |-|-|-|-|
 | git remote rename   | | <old> <new>
 | git remote remove   | | <name>
+|Remote 2||||
+|-|-|-|-|
 | git remote set-head | | <name> | -a(--auto) / -d(--delete) / <branch> |       
 
 |Remote||||
