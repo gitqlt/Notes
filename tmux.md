@@ -5,3 +5,6 @@ Terminal multiplexer
 | Horizontal | tmux new-session\\; splitw -h                                       | <> %           | \\| \\| \\|
 |            | tmux new\\; splitw -h\\; splitw -h\\; select-layout even-horizontal | <> : select... | \\| \\| \\| \\|
 | Vertical   | tmux new';' splitw -v                                               | <> "           | &Xi;
+
+| | New session                                                                    | Interactive | Visually
+| Command mode |                                                                   | <> :
