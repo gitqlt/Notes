@@ -12,7 +12,7 @@ Transform video
 | Cut the trail and the end of the output | ffmpeg -i <file.mp4> -c copy -ss 00:00:11 -t 00:01:22 middle.mp4
 | Skip the input and cut the end | ffmpeg -ss 00:00:08 -i <file.mp4> -c copy -t 00:01:25 middle.mp4
 
-**Rotete video, sets metadata only;** display_rotation: 0 90 180 270
+**Rotete video, sets metadata only** display_rotation: 0 90 180 270
 
     $ ffmpeg -display_rotation 90 -i input.mp4 -codec copy output.mp4
 
@@ -26,3 +26,6 @@ Transform video
 | 0d counterclockwise                             | X: 2 |
 | 90d clockwise and vertical flip                 | X: 3 |
 
+**Concat videos (concat demuxer, no re-encode)**
+
+    $ ffmpeg -f concat -safe 0 -i <( printf "file `pwd`/%s\n" file1.mp4 file2.mp4 ) -c copy ccat.mp4
