@@ -14,3 +14,7 @@ adb: Android Debug Bridge
     $ adb shell am start -n com.mmg.dev.promex/.MainActivity -a android.intent.action.MAIN
       [ -c android.intent.category.LAUNCHER -f 0x50200000 ]
     $ adb shell monkey -p com.mmg.dev.promex -v 500
+**Logcat buffer size**
+
+    $ adb logcat -b all -g
+    $ adb logcat -G 64M (default: -b main,system,crash: 256 kiB)
