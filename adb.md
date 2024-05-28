@@ -14,6 +14,10 @@ adb: Android Debug Bridge
     $ adb shell am start -n com.mmg.dev.promex/.MainActivity -a android.intent.action.MAIN
       [ -c android.intent.category.LAUNCHER -f 0x50200000 ]
     $ adb shell monkey -p com.mmg.dev.promex -v 500
+**Set/remove Device Owner**
+
+    $ adb shell dpm set-device-owner com.birdthedeveloper.prometheus.android.exporter/.worker.DeviceOwnerReceiver
+    $ adb shell dpm remove-active-admin com.birdthedeveloper.prometheus.android.exporter/.worker.DeviceOwnerReceive
 **Logcat buffer size**
 
     $ adb logcat -b all -g
