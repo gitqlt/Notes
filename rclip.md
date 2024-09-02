@@ -10,4 +10,4 @@ CLI photo search (AI)
 
     $ cd Pictures
     $ rclip -fn -t 1 "shiba inu" | feh -f - --scale-down
-    $ rclip
+    $ rclip -fn      "flower"    | feh -f - -t
