@@ -1,6 +1,12 @@
 adb: Android Debug Bridge
 ====
 
+**Generate private key/public key (no daemon)**
+
+    $ adb keygen adhocAdbKey
+    $ ls -l ./adhocAdbKey ./adhocAdbKey.pub
+
+    $ adb pubkey ./adhocAdbKey
 **Fingerprint of public key**
 
     $ awk '{print $1}' < ~/.android/adbkey.pub \
