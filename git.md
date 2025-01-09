@@ -1,5 +1,13 @@
-Practical `git` (under construction) (online edit: https://dillinger.io/)
+Practical `git` (under construction) (online edit help: https://dillinger.io/)
 ===
+**Find the commits that are not part of any branch or tag:**
+
+        git rev-list --all --not $(git rev-list --branches --tags)
+
+**fsck**
+
+       git fsck
+
 **Remote:**
 
        git remote [-v | --verbose]
