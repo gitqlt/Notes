@@ -24,3 +24,7 @@ Options:
 ### Check/show a PEM public key:
     $ openssl rsa -in privkey.pem -pubout | openssl rsa -pubin -noout -text
     $ openssl rsa -in pubkey.pem -pubin -noout -text
+
+### Check/show all content of a PFX file:
+    $ openssl pkcs12 -info -in <file.pfx>
+    
