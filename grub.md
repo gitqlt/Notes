@@ -12,5 +12,15 @@ GRUB practical
 **Regenerate device.map (optional)**
 
     # grub-mkdevicemap -m /mnt/sda7/boot/grub/device.map
-    
-    
+**Reset the Root Password Using GRUB**
+- Press E on the GRUB menu to make a temporary change on the system’s boot script
+- In the line beginning with **linux** modify **ro** to **rw**
+- Add **init=/bin/bash** at the end of the line
+- boot
+
+    #mount -n -o remount,rw /  
+    #passwd root
+  
+**Reset the Root Password**  
+- First
+- Second
