@@ -1,19 +1,18 @@
 Practical `git` (under construction) (online edit help: https://dillinger.io/)
 ===
-**Pull with rebase**
+#### Checkout from branch (copy file)
+    git checkout <otherBranch> <myFile>
 
+#### Pull with rebase
     git pull -r
     
-**Find the commits that are not part of any branch or tag:**
-
+#### Find the commits that are not part of any branch or tag:**
     git rev-list --all --not $(git rev-list --branches --tags)
 
-**fsck**
-
+#### fsck
     git fsck
 
-**Remote:**
-
+## remote:
      git remote [-v | --verbose]
      git remote add [-t <branch>] [-m <master>] [-f] [--[no-]tags] [--mirror=(fetch|push)] <name> <url>
      git remote rename <old> <new>
