@@ -10,4 +10,4 @@ Samba: access to SMB/CIFS resources on servers
     smb: \> cd myDir
 
 ### Mount share/myDir:
-    # mount.cifs //smbserver/share/Dir /mnt/mountDir -o 'user=MYUSER,uid=UID,gid=GID,file_mode=0664,dir_mode=0775'
+    # mount.cifs //smbserver/share/myDir /mnt/mountDir -o 'user=MYUSER,uid=UID,gid=GID,file_mode=0664,dir_mode=0775'
