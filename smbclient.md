@@ -1,9 +1,13 @@
-List shares:
-===
+Samba: access to SMB/CIFS resources on servers
+====
 
+### List shares:
     $ smbclient -U [MYGROUP/]myuser -L //smbserver
+    $ smbclient -U myuser -W mygroup -L //smbserver
 
-Connect to share:
-===
+### Connect to share:
+    $ smbclient -U [MYGROUP/]myuser //smbserver/share
+    smb: \> cd myDir
 
-    $ smbclient -U [MYGROUP/]myuser //smbserver/ETC
+### Mount share/myDir:
+    # mount.cifs //smbserver/share/Dir /mnt/mountDir -o 'user=MYUSER,uid=UID,gid=GID,file_mode=0664,dir_mode=0775'
