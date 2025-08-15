@@ -13,4 +13,5 @@ sql: Structured Query Language
 
 #### table info
     sql> DESCRIBE <tablename>;
+    sql> SHOW COLUMNS FROM <tablename>;
     mysql> SHOW CREATE TABLE <tablename>;
