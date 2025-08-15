@@ -11,5 +11,6 @@ sql: Structured Query Language
     sql> select count(*) from <tablename>;
     mysql> select table_name,table_rows FROM information_schema.tables WHERE table_schema = 'dbname' and table_name = 'tablename';
 
-#### table sizeXXXX
-    sql> selectXXXX count(*) from <table>;    
+#### table info
+    sql> DESCRIBE <tablename>;
+    mysql> SHOW CREATE TABLE <tablename>;
