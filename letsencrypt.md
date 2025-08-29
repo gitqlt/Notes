@@ -1,4 +1,5 @@
-certbot (formerly letsencrypt) Tool to obtain certs from Let's Encrypt and autoenable HTTPS
+certbot (formerly letsencrypt)  
+Obtain certs from Let's Encrypt and autoenable HTTPS
 ====
 
 #### Get TXT record for DNS challenge
