@@ -13,36 +13,36 @@
     <tr>
       <td>val</td>
       <td>
-        <table border="0>
-          <tr><td>append:   NO</td></tr>
+        <table border="0">
+          <tr><td>append: NO</td></tr>
           <tr><td>item Set: NO</td></tr>
           <tr><td>reassign: NO</td></tr>
         </table>
       </td>
-      <td>   
-        <table border="0>
-          <tr><td>append:   NO</td></tr>
+      <td>
+        <table border="0">
+          <tr><td>append: YES</td></tr>
           <tr><td>item Set: NO</td></tr>
           <tr><td>reassign: NO</td></tr>
         </table>
       </td>
     </tr>
     <tr>
-      <td>var</td>
+      <td>val</td>
       <td>
-        <table border="0>
-          <tr><td>append:   NO</td></tr>
+        <table border="0">
+          <tr><td>append: NO</td></tr>
           <tr><td>item Set: NO</td></tr>
           <tr><td>reassign: NO</td></tr>
         </table>
       </td>
       <td>
-        <table border="0>
-          <tr><td>append:   NO</td></tr>
+        <table border="0">
+          <tr><td>append: YES</td></tr>
           <tr><td>item Set: NO</td></tr>
           <tr><td>reassign: NO</td></tr>
         </table>
       </td>
-    </tr>
+    </tr>    
   </tbody>
 </table>
