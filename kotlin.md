@@ -14,8 +14,9 @@
       <td>val</td>
       <td>
         <table border="0">
-          <tr><td>append: NO</td></tr>
-          <tr><td>1111</td></tr>
+          <tr><td>append:   NO</td></tr>
+          <tr><td>item Set: NO</td></tr>
+          <tr><td>reassign: NO</td></tr>
         </table>
       </td>
       <td>append: yes</td>
