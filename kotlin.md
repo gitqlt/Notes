@@ -1,7 +1,7 @@
 <h1>Kotlin: an open-source, statically-typed programming language</h1>
 
 <h4>Immutable vs Mutable example</h4>
-<table>
+<table border="1">
   <thead>
     <tr>
       <th></th>
@@ -12,7 +12,12 @@
   <tbody>
     <tr>
       <td>val</td>
-      <td>append: NO<br>1111</td>
+      <td>
+        <table border="0">
+          <tr><td>append: NO</td></tr>
+          <tr><td>1111</td></tr>
+        </table>
+      </td>
       <td>append: yes</td>
     </tr>
     <tr>
