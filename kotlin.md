@@ -1,6 +1,6 @@
 <h1>Kotlin: an open-source, statically-typed programming language</h1>
 
-<h4>Immutable vs Mutable example with lists:</h4>
+<h4>Immutable vs. Mutable example with lists:</h4>
 <table border="1">
   <thead>
     <tr>
