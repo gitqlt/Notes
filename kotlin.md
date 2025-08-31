@@ -1,6 +1,6 @@
 <h1>Kotlin: an open-source, statically-typed programming language</h1>
 
-<h4>Immutable vs Mutable example</h4>
+<h4>Immutable vs Mutable example with lists:</h4>
 <table border="1">
   <thead>
     <tr>
@@ -21,8 +21,8 @@
       </td>
       <td>
         <table border="0">
-          <tr><td>append: YES</td></tr>
-          <tr><td>item Set: NO</td></tr>
+          <tr><td>append: yes</td></tr>
+          <tr><td>item Set: yes</td></tr>
           <tr><td>reassign: NO</td></tr>
         </table>
       </td>
@@ -31,16 +31,16 @@
       <td>val</td>
       <td>
         <table border="0">
-          <tr><td>append: NO</td></tr>
+          <tr><td>append: yes</td></tr>
           <tr><td>item Set: NO</td></tr>
-          <tr><td>reassign: NO</td></tr>
+          <tr><td>reassign: yes</td></tr>
         </table>
       </td>
       <td>
         <table border="0">
-          <tr><td>append: YES</td></tr>
-          <tr><td>item Set: NO</td></tr>
-          <tr><td>reassign: NO</td></tr>
+          <tr><td>append: yes</td></tr>
+          <tr><td>item Set: yes</td></tr>
+          <tr><td>reassign: yes</td></tr>
         </table>
       </td>
     </tr>    
