@@ -28,7 +28,7 @@
       </td>
     </tr>
     <tr>
-      <td>val</td>
+      <td>var</td>
       <td>
         <table border="0">
           <tr><td>append: yes</td></tr>
