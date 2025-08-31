@@ -1,8 +1,8 @@
 Kotlin: an open-source, statically-typed programming language
 ====
 
-#### Immutable vs Mutable
-|        | Column 2 | Column 3 |
-|--------|----------|----------|
-| val    | Cell     | Cell     |
-| var    | Cell     | Cell     |
+#### Immutable vs Mutable example
+|        |  listOf()   | mutableListOf() |
+|---|---|---|
+| val    | append: NO  | append: yes |
+| var    | append: yes | append: yes |
