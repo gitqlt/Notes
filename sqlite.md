@@ -1,4 +1,4 @@
-sqlite: Command-line interface for SQLite
+sqlite3: Command-line interface for SQLite
 ====
 
 #### List database tablenames
