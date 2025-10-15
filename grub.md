@@ -9,6 +9,8 @@ GRUB practical
     # ls /mnt/p1
         EFI 'System Volume Information'
     # grub-install -v -d /mnt/p7/usr/lib/grub/x86_64_efi --boot-directory=/mnt/p7/boot --efi-directory=/mnt/p1
+    or
+    # grub-install -v --target=x86_64-efi --efi-directory=/mnt/p1/EFI --boot-directory=/mnt/p7 --bootloader-id=ubuntu --recheck /dev/sda
 **Regenerate device.map (optional)**
 
     # grub-mkdevicemap -m /mnt/sda7/boot/grub/device.map
