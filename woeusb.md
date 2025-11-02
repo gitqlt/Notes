@@ -22,10 +22,10 @@ WoeUSB: bootable Microsoft Win USB (rufus method, CMD)
       /dev/sdb
 
     - Check legacy boot: (Win logo... then starts OK)
-      qemu-system-x86_64 -m 2G -drive file=/dev/sdb,format=raw
+      qemu-system-x86_64 --enable-kvm -m 2G -drive file=/dev/sdb,format=raw
 
     - Check UEFI boot: (display not start)
-      qemu-system-x86_64 -m 2G -drive file=/dev/sdb,format=raw
+      qemu-system-x86_64 --enable-kvm -m 2G -drive file=/dev/sdb,format=raw
         -bios /usr/share/OVMF/OVMF_CODE_4M.fd -drive if=pflash,format=raw,readonly=on,file=/usr/share/OVMF/OVMF_VARS_4M.fd -vga std
 
 
