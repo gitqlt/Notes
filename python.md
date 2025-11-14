@@ -4,7 +4,9 @@ Python3: Interpreted, interactive, object-oriented programming language
 #### -B : don't write .pyc (__pycache__) files on import
     $ python3 -B <script>
 
-#### debug output with trace
+#### debug output with trace  
+(For options, see: /usr/lib/python3.10/trace.py -h)
+
     $ python3 -B -m trace --trace <script> <arg>
 
 #### interactive input
