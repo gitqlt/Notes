@@ -3,7 +3,7 @@ ls - list directory contents
 ls [OPTION]... [FILE]...
 
 #### Long listing, time-related options
-|Short|Desc|Mistake|Note|find Note|
+|Short|Desc|Common Mistake|Note|'find' Note<br>(See: 'stat')|
 |-|-|-|-|-|
 |ls -l<br>ls -l --time=mtime |Show mtime (last modification time) |(NOT **ls -lm**, which is different)|Sort by name (default)|With find: -mtime
 |ls -lc<br>ls -l --time=ctime|Show ctime (last status change t.)  |                                    |Sort by name (default)|With find: -ctime
