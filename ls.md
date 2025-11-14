@@ -7,7 +7,7 @@ ls [OPTION]... [FILE]...
 |-|-|-|-|-|
 |ls -l |ls -l --time=mtime|Show mtime (last modification time) |(NOT **ls -lm**, which is different)|Sort by name (default)
 |ls -lc|ls -l --time=ctime|Show ctime (last status change time)|                                    |Sort by name (default)
-|ls -lu|ls -l --time=atime|Show atime (last access time)       |                                    |Sort by name (default)
+|ls -lu|ls -l --time=atime|Show atime (last access time)       |(NOT **ls -la**, which is different)|Sort by name (default)
 ||
 |ls -lt, ls -lrt   ||Show and sort by mtime
 |ls -ltc, ls -lrtc ||Show and sort by ctime
