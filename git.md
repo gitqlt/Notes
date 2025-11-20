@@ -3,8 +3,9 @@ Practical `git` (under construction) (online edit help: https://dillinger.io/)
 #### Checkout from branch (copy file)
     git checkout <otherBranch> <myFile>
 
-#### Pull with rebase
+#### Pull with rebase. Merge with 'theirs'
     git pull -r
+    git merge -X theirs <master>
     
 #### Find the commits that are not part of any branch or tag:**
     git rev-list --all --not $(git rev-list --branches --tags)
