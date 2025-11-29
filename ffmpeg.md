@@ -26,6 +26,8 @@ Transform video
 #### Concat videos (concat demuxer, no re-encode)
 
     $ ffmpeg -f concat -safe 0 -i <( printf "file `pwd`/%s\n" file1.mp4 file2.mp4 ) -c copy ccat.mp4
+        (Optionally fix the files if needed, like:)
+    $ ffmpeg -i fileX.mp4 -c:v libx264 -crf 23 -preset fast -c:a aac -b:a 192k -movflags +faststart fixed_fileX.mp4
 
 ### Check, resample video when the video codec (v9) is problem (some Android players)
 
