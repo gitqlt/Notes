@@ -1,5 +1,14 @@
 Practical `git` (under construction) (online edit help: https://dillinger.io/)
 ===
+#### Create a new branch from the current mods AND set the upstream URL
+    git br -c newBranch
+    git switch newBranch
+    git br -avv
+    git add ...
+    git commit -m 'Create newBranch from mods: ...'
+    git push -u origin newBranch               # replaces git br --set-upstream-to=origin/newBranch
+    git br -avv                                # as that works only if newBranch exists already on the remote
+
 #### Checkout from branch (copy file)
     git checkout <otherBranch> <myFile>
 
