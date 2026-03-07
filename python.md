@@ -15,3 +15,7 @@ Python3: Interpreted, interactive, object-oriented programming language
 #### pdb with interactive input
     $ PYTHONPATH=/... python3 -B -m pudb <script> <interactive-environment starting subcommand>
     >>> import myMock; myMock.mock()
+    
+#### virtualenv
+    $ python2 -m virtualenv -h        # pip: pip2 install virtualenv
+    $ python3 -m venv -h              # apt: libpython3.12-stdlib
