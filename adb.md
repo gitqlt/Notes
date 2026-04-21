@@ -6,9 +6,11 @@ adb: Android Debug Bridge
     $ adb keygen adhocAdbKey
     $ ls -l ./adhocAdbKey ./adhocAdbKey.pub
 
-    $ adb pubkey ./adhocAdbKey
+    $ adb pubkey ./adhocAdbKey              # cannot be generated with openssl
 **Fingerprint of public key**
 
+    $ adb pubkey ./adbkey | cut -d ' ' -f 1 | base64 -d | md5sum
+    $ cat adbkey.pub      | cut -d ' ' -f 1 | base64 -d | md5sum
     $ awk '{print $1}' < ~/.android/adbkey.pub \
       | openssl base64 -A -d -a | openssl md5 -c | awk '{print $2}' | tr '[:lower:]' '[:upper:]'
 **Install apk**
