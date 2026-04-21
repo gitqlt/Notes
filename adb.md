@@ -15,7 +15,8 @@ adb: Android Debug Bridge
 #### Get allowed keys
     $ adb pull /data/misc/adb/adb_keys        # Cannot push. ( Use Settings ... -> 'Revoke USB debugging' on the device )
 #### Show the key which connects    
-    $ adb kill-server; ADB_TRACE=all adb shell    # Only the 'shell' command :-(
+    $ adb kill-server; ADB_TRACE=all adb shell    # Only the 'shell' command prints the envvar ADB_VENDOR_KEYS :-(
+    # setting ADB_VENDOR_KEYS does not prevent of using/creating ~/.android/adbkey :-(
 
 #### List envvars which can be used
     $ adb --help
