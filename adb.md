@@ -1,18 +1,20 @@
 adb: Android Debug Bridge
 ====
 
-**Generate private key/public key (no daemon)**
-
+#### Generate private key/public key (no daemon)
     $ adb keygen adhocAdbKey
     $ ls -l ./adhocAdbKey ./adhocAdbKey.pub
 
-    $ adb pubkey ./adhocAdbKey              # cannot be generated with openssl
-**Fingerprint of public key**
-
+    $ adb pubkey ./adhocAdbKey                # Cannot be generated with openssl
+#### Fingerprint of public key
     $ adb pubkey ./adbkey | cut -d ' ' -f 1 | base64 -d | md5sum
     $ cat adbkey.pub      | cut -d ' ' -f 1 | base64 -d | md5sum
     $ awk '{print $1}' < ~/.android/adbkey.pub \
       | openssl base64 -A -d -a | openssl md5 -c | awk '{print $2}' | tr '[:lower:]' '[:upper:]'
+
+#### Get allowed keys
+    $ adb pull /data/misc/adb/adb_keys        # Cannot push. ( Use Settings ... -> 'Revoke USB debugging' on the device )
+      
 **Install apk**
 
     $ adb install -r -t ./app/build/intermediates/apk/debug/app-debug.apk
