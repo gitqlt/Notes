@@ -1,5 +1,16 @@
 Practical `git` (under construction) (online edit help: https://dillinger.io/)
 ===
+### Memo:
+
+#### merge
+When I run `git merge master` being on my `feature` branch, Git adds an extra commit to this branch,
+which contains all the changes of `master` since the point where the two branches diverged
+
+#### rebase
+When I run `git rebase master` being on my `feature` branch, Git replays my `feature` branch commits
+onto the current tip of `master` (rather than from the point where the two branches originally diverged)
+
+### Howto
 #### Create a new branch from the current mods AND set the upstream URL
     git br -c newBranch
     git switch newBranch
