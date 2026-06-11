@@ -14,7 +14,9 @@ Network services, environmen
 ## With systemd-networkd  
 (see: /etc/netplan/)
 #### List active interfaces 
+    networkctl status
     networkctl status eth0
+    netplan get
     
 ## With NetworkManager  
 (see: /etc/NetworkManager/, /etc/NetworkManager/system-connections/)
