@@ -7,10 +7,13 @@ Network services, environmen
     ip -br addr
     ip -br route
 
+#### Inspect resolver
+    resolvectl status
+
 ## With systemd-networkd  
 (see: /etc/netplan/)
 #### List active interfaces 
-    networkctl atatus eth0
+    networkctl status eth0
     
 ## With NetworkManager  
 (see: /etc/NetworkManager/, /etc/NetworkManager/system-connections/)
