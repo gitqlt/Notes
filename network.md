@@ -9,6 +9,7 @@ Network services, environmen
 
 #### Inspect resolver
     resolvectl status
+    resolvectl domain
 
 ## With systemd-networkd  
 (see: /etc/netplan/)
