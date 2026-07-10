@@ -1,4 +1,4 @@
-Network services, environmen
+Network services, environment
 ===
 #### What is managing networking
     systemctl is-active NetworkManager systemd-networkd
