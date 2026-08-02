@@ -13,12 +13,13 @@ onto the current tip of `master` (rather than from the point where the two branc
 ### Howto
 #### Create a new working repo together with local upstream
     mkdir -p <CentralRepoPath>/NewProject
-    git init --bare <CentralRepoPath>/NewProject
+    git init --bare [--initial-branch=main] <CentralRepoPath>/NewProject
     cd <WorkPath>/NewProject
-    git init
+    git init [--initial-branch=main]
     git remote add origin <CentralRepoPath>/NewProject
     git remote -v
     [ git config --local user.name ...; git config --local user.email ...@NNN.com ]
+    [ git config --local  push.autoSetupRemote true ]
 #### Create a new branch from the current mods AND set the upstream URL
     git br -c newBranch
     git switch newBranch
