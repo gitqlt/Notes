@@ -11,6 +11,13 @@ When I run `git rebase master` being on my `feature` branch, Git replays my `fea
 onto the current tip of `master` (rather than from the point where the two branches originally diverged)
 
 ### Howto
+#### Create a new working repo together with local upstream
+    mkdir -p <CentralRepoPath>/NewProject
+    git init --bare <CentralRepoPath>/NewProject
+    cd <WorkPath>/NewProject
+    git init
+    git remote add origin <CentralRepoPath>/NewProject
+    git remote -v
 #### Create a new branch from the current mods AND set the upstream URL
     git br -c newBranch
     git switch newBranch
