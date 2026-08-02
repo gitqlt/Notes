@@ -18,6 +18,7 @@ onto the current tip of `master` (rather than from the point where the two branc
     git init
     git remote add origin <CentralRepoPath>/NewProject
     git remote -v
+    [ git config --local user.name ...; git config --local user.email ...@NNN.com ]
 #### Create a new branch from the current mods AND set the upstream URL
     git br -c newBranch
     git switch newBranch
