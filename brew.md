@@ -12,7 +12,8 @@ brew.sh: Homebrew - The Package Manager for Everywhere
     $ git config --local user.name jos; git config --local user.email 87870000+jos@users.noreply.github.com
     $ git remote -v; git branch -vv
     $ git fetch origin
-    $ $ brew test kpcli
+    $ brew test kpcli
+    $ brew lgtm                                                  # Looks Good To Me
     $ [ git rebase origin/main; ] brew lgtm; brew lgtm --online
     ... edit
     $ git status; git diff
