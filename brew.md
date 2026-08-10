@@ -12,9 +12,8 @@ brew.sh: Homebrew - The Package Manager for Everywhere
     $ git config --local user.name jos; git config --local user.email 87870000+jos@users.noreply.github.com
     $ git remote -v; git branch -vv
     $ git fetch origin
-    $ git rebase origin.main
-    $ brew test kpcli
-    $ brew lgtm --online
+    $ $ brew test kpcli
+    $ [ git rebase origin/main; ] brew lgtm; brew lgtm --online
     ... edit
     $ git status; git diff
     $ HOMEBREW_NO_INSTALL_FROM_API=1 brew reinstall --build-from-source kpcli
