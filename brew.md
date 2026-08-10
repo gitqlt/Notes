@@ -5,10 +5,10 @@ brew.sh: Homebrew - The Package Manager for Everywhere
     $ brew tap --force homebrew/core
     $ cd $(brew --repository homebrew/core)
     $ git remote -v; git branch -vv
-    $ git remote add jos https://github.com/joseph2021k/homebrew-core.git
+    $ git remote add Jos https://github.com/jos/homebrew-core.git
     
-    $ git fetch jos kpcli-xml-parser-fix
-    $ git switch --track jos/kpcli-xml-parser-fix
+    $ git fetch Jos kpcli-xml-parser-fix
+    $ git switch --track Jos/kpcli-xml-parser-fix
     $ git config --local user.name jos; git config --local user.email 87870000+jos@users.noreply.github.com
     $ git remote -v; git branch -vv
     $ git fetch origin
@@ -21,4 +21,4 @@ brew.sh: Homebrew - The Package Manager for Everywhere
     $ brew test kpcli
     $ brew lgtm --online
     $ git commit [--amend]
-    $ git push --force-with-lease jos kpcli-xml-parser-fix
+    $ git push --force-with-lease Jos kpcli-xml-parser-fix
