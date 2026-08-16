@@ -1,7 +1,17 @@
 brew.sh: Homebrew - The Package Manager for Everywhere
 ====
 
-#### Modifying my PR
+#### Check local modifications in a (PR) branch or main
+    $ export HOMEBREW_NO_INSTALL_FROM_API=1
+    $ cd "$(brew --repository homebrew/core)"
+    $ brew style --fix --formula kpcli
+    $ brew audit --strict --online kpcli
+    $ brew reinstall --build-from-source kpcli
+    $ brew test kpcli
+    $ brew linkage kpcli
+    $ brew lgtm --online
+
+#### Modifying PR
     $ brew tap --force homebrew/core
     $ cd $(brew --repository homebrew/core)
     $ git remote -v; git branch -vv
@@ -21,4 +31,7 @@ brew.sh: Homebrew - The Package Manager for Everywhere
     $ brew test kpcli
     $ brew lgtm --online
     $ git commit [--amend]
-    $ git push --force-with-lease Jos kpcli-xml-parser-fix
+    $    git push --force-with-lease Jos kpcli-xml-parser-fix (https auth with PAT)
+    $    or
+    $    git remote set-url Jos git@github.com:joseph2021k/homebrew-core.git
+    $    git push --force-with-lease Jos kpcli-xml-parser-fix  (SSH auth)
