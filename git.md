@@ -29,8 +29,11 @@ onto the current tip of `master` (rather than from the point where the two branc
     git push -u origin newBranch               # replaces git br --set-upstream-to=origin/newBranch
     git br -avv                                # as that works only if newBranch exists already on the remote
 
-#### Checkout from branch (copy file)
-    git checkout <otherBranch> <myFile>
+#### Checkout from branch/rev (copy file)
+    git checkout <otherBranch>/<rev> <myFile>
+
+#### Cat from branch/rev (cat file)
+    git show <otherBranch>/<rev>:<myFile>    
 
 #### Pull with rebase. Merge with 'theirs'
     git pull -r
@@ -41,6 +44,13 @@ onto the current tip of `master` (rather than from the point where the two branc
 
 #### fsck
     git fsck
+
+#### subtree
+    git remote add <remoteName> <repoUrl>
+    git subtree add --prefix=<subDir> <remoteName> <branch> --squash
+    
+    git subtree pull --prefix=<subDir> <remoteName> <branch> --squash
+    git subtree push --prefix=<subDir> <remoteName> <branch>
 
 ## remote:
      git remote [-v | --verbose]
