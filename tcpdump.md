@@ -5,6 +5,7 @@ tcpdump: Command-line packet analyzer
     # tcpdump -i <interface> -s 0  src host <target_host> -w <output_file.pcap>
     # tcpdump -i <interface> -s 0  dst host <target_host> -w <output_file.pcap>
     # tcpdump -i <interface> -s 0 'dst host <target_host> and ( port 443 or port 80 )' -w <output_file.pcap>
+    # tcpdump -i <interface> -s 0 'dst host <target_host> and !(src host srchost1 or src host srchost2) and ( port 443 or port 80 )'
 
 ### Analyze
                           $ tcpdump -vv -r traffic.pcap host 192.168.1.100
