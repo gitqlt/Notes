@@ -15,7 +15,7 @@ a high-level, general-purpose programming language
     $ python3 p0.py     - OK
     $ python3 D1/p1.py  - ERR
            
-### pip,virtualenv with minimal system footprint and with minimal system dependency
+### Python3,pip,virtualenv install with minimal system footprint and with minimal system dependency
     # apt update
     # apt install --no-install-recommends python3
 
