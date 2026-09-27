@@ -19,8 +19,8 @@ a high-level, general-purpose programming language
     # apt update
     # apt install --no-install-recommends python3
 
-    # python3 -m venv -h
-    # python3 -m venv v30 (shall not work. OK)
+        # python3 -m venv -h
+        # python3 -m venv v30 (shall not work. OK)
 
     # apt install --no-install-recommends wget     ca-certificates openssl
         ## wget https://bootstrap.pypa.io/get-pip.py; python3 ./get-pip.py --break-system-packages
@@ -36,5 +36,5 @@ a high-level, general-purpose programming language
     # virtualenv -h
     # cd /tmp; python3 -m virtualenv v3 (or: virtualenv v3)
 
-# python3 -m venv -h
-# python3 -m venv v30 (shall not work. OK)
+        # python3 -m venv -h
+        # python3 -m venv v30 (shall not work. OK)
