@@ -18,4 +18,4 @@ Python3: Interpreted, interactive, object-oriented programming language
     
 #### virtualenv
     $ python2 -m virtualenv -h        # pip: pip2 install virtualenv
-    $ python3 -m venv -h              # apt: libpython3.12-stdlib
+    DONOTUSE   $ python3 -m venv -h              # apt: libpython3.12-stdlib
