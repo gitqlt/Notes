@@ -8,3 +8,6 @@ Control the systemd - system and service manager -
 #### Status:
     $ systemctl is-system-running
     $ systemctl --failed
+
+#### Running services
+    systemctl list-units --type=service --state=running
