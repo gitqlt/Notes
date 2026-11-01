@@ -21,3 +21,4 @@ CVS practical
         $ cat /tmp/...exp | git fast-import         # --- Only when convert; Omit aniway
     $ git mv .gitignore dot.gitignore        
     $ git switch master; ls -l
+    $ git config --local user.name <>; git config --local user.email <>@<>
