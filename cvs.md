@@ -19,4 +19,5 @@ CVS practical
     $ cd <local-workdirs>/<workdir>
     $ git init --separate-git-dir .../qfgGIT/<...>/<...>
         $ cat /tmp/...exp | git fast-import         # --- Only when convert; Omit aniway
+    $ git mv .gitignore dot.gitignore        
     $ git switch master; ls -l
